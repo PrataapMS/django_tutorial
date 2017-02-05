@@ -13,3 +13,5 @@ Practice repository with basic commands to work with Django Framework
 6. Create a view
 7. Create url mappings
 8. Add templates to views
+9. Add static files to HTML
+10. Setup media dir
