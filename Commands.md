@@ -58,7 +58,7 @@ $ git config user.email "johndoe123@me.com"
 ## git command to clone:
 ```bash
 $ git clone https://<USER>:<PASS>@github.com/<OWNER>/<REPO_NAME>.git <workspace>
-                    --------OR-------
+            --------OR-------
 $ git clone https://<Repo_name>.git
 ```
 ##### where you replace-  
@@ -68,3 +68,9 @@ $ git clone https://<Repo_name>.git
 * <REPO_NAME> with the name of your project’s repository; and
 * <workspace> with the name for your workspace directory. This is optional; leaving this option
 out will simply create a directory with the same name as the repository.        
+
+
+## Create/add a new app to django
+```bash
+python manage.py startapp rango
+```
