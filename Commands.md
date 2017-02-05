@@ -49,9 +49,17 @@ django-admin startproject mysite
 python manage.py runserver
 ```
 
-## git command to clone: <a name="git-command-to-clone"></a>
+##### To tell Git your full name, and your e-mail address:
+```bash
+$ git config user.name "John Doe"
+$ git config user.email "johndoe123@me.com"
+````    
+
+## git command to clone:
 ```bash
 $ git clone https://<USER>:<PASS>@github.com/<OWNER>/<REPO_NAME>.git <workspace>
+                    --------OR-------
+$ git clone https://<Repo_name>.git
 ```
 ##### where you replace-  
 * <USER> with your GitHub username;
@@ -60,9 +68,3 @@ $ git clone https://<USER>:<PASS>@github.com/<OWNER>/<REPO_NAME>.git <workspace>
 * <REPO_NAME> with the name of your project’s repository; and
 * <workspace> with the name for your workspace directory. This is optional; leaving this option
 out will simply create a directory with the same name as the repository.        
-
-##### To tell Git your full name, and your e-mail address:
-```bash
-$ git config user.name "John Doe"
-$ git config user.email "johndoe123@me.com"
-````    

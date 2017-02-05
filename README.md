@@ -1,6 +1,6 @@
 # Django Tutorial to Learn
 
-## Tutorial followed from Django documentation and Tamgo with Django Book.
+## Tutorial followed from Django documentation and Tango with Django Book.
 
 Practice repository with basic commands to work with Django Framework    
 
