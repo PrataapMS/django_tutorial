@@ -12,3 +12,4 @@ Practice repository with basic commands to work with Django Framework
 5. add a new app to the project
 6. Create a view
 7. Create url mappings
+8. Add templates to views
