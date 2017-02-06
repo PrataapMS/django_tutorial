@@ -10,7 +10,30 @@
     <body>
         <h1>Rango says...</h1>
         hello world! <strong>{{ boldmessage }}</strong><br />
-        <a href="/rango/about/">About</a><br />
+
+        <h3>Top 5 Categories:</h3>
+        {% if categories %}
+            <ul>
+                {% for category in categories %}
+                <li><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a> - {{ category.views }} - {{ category.likes }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>There are no categories present.</strong>
+        {% endif %}
+
+        <h3>Top 5 Pages:</h3>
+        {% if pages %}
+            <ul>
+                {% for page in pages %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a> - {{page.views}}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>There are no pages present.</strong>
+        {% endif %}
+
+        <b><a href="/rango/about/">About</a></b><br />
         <img src="{% static "images/rango.png" %}" alt="Picture of Rango" />
     </body>
 </html>
