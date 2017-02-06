@@ -74,3 +74,30 @@ out will simply create a directory with the same name as the repository.
 ```bash
 python manage.py startapp rango
 ```
+
+## Creating and Migrating the Database
+```bash
+$ python manage.py migrate
+
+# create a superuser to manage the database
+$ python manage.py createsuperuser
+```
+
+## Creating / Updating Models / Tables
+```bash
+$ python manage.py makemigrations rango
+
+# apply these migrations (which will essentially create the database tables), then you need to issue
+$ python manage.py migrate
+```
+
+:warning: **Warning:**
+> Whenever you add to existing models, 
+> you will have to repeat this process running python manage.py makemigrations <app_name>, 
+> and then python manage.py migrate
+
+
+## Django shell
+```bash
+$ python manage.py shell
+```
