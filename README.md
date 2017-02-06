@@ -28,7 +28,7 @@ Tutorial followed from [tangowithdjango](http://www.tangowithdjango.com/book17/)
 
 
 
-**There are five main steps that you must undertake to create a data driven webpage in Django.**
+**There are five main steps that you must undertake to create a data driven webpage in Django.**    
 1. First, import the models you wish to use into your application’s views.py file.
 2. Within the view you wish to use, query the model to get the data you want to present.
 3. Pass the results from your model into the template’s context.
