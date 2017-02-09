@@ -102,7 +102,8 @@ $ python manage.py migrate
 $ python manage.py shell
 ```
 
-## Command to check query generated while performing query from 
+## Command to check query generated while performing query from django dbshell
+*below represents an example which prints the sql query generated for a query perfrmed from django model interface
 ```bash
 from django.db import connection
 from django.db import reset_queries
