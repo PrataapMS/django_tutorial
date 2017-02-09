@@ -101,3 +101,12 @@ $ python manage.py migrate
 ```bash
 $ python manage.py shell
 ```
+
+## Command to check query generated while performing query from 
+```bash
+from django.db import connection
+from django.db import reset_queries
+reset_queries()
+q = EoDTimeSeries.objects.filter(profile__NSEcode="ABB")
+print (q.query)
+```
