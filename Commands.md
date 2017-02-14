@@ -77,9 +77,16 @@ python manage.py startapp rango
 
 ## Creating and Migrating the Database
 ```bash
+# to create sql commands/queries to be generated, run the following
+$ python manage.py makemigrations [app_name, eg: polls]
+
+# To show the migrations done, use the below command
+$ showmigration [app_name]
+
+# To execute the sql queries generated:
 $ python manage.py migrate
 
-# create a superuser to manage the database
+# create a superuser to manage the database, only first time user:
 $ python manage.py createsuperuser
 ```
 
